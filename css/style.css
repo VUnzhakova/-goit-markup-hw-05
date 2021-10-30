@@ -91,7 +91,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current {
+.menu-link.current-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -599,6 +599,7 @@ transition-property: background-color;
 .gal-element:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);}
+    
 
 
 .gal-element:nth-child(3n) {
@@ -624,4 +625,31 @@ transition-property: background-color;
 .project-discription {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+}
+
+  .overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  height: 100%;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: lcubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-picture-txt {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03;} 
+
+ .gal-link:hover .overlay-text {
+  transform: translateY(0%);
 }
