@@ -75,7 +75,7 @@ img {
 .site-nav .item:last-child {
   margin-right: 0;
 }
-.site-nav .link {
+.site-nav .menu-link{
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -102,7 +102,23 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
 }
+.menu-link {position: relative;}
+
+.menu-link.current-link::after{
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  border-radius: 2px;
+  bottom: -32px;
+  display: block;
+  background-color: var(--accent-color);
+
+}
+
+
 
 .site-nav .link:hover,
 .site-nav .link:focus {
