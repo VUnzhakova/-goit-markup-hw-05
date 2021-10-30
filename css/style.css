@@ -627,6 +627,7 @@ transition-property: background-color;
   border: 1px solid #eeeeee;
 }
 
+/*  Оверлеи галереи*/
 .project-item {
   position: relative;
   overflow: hidden;
@@ -652,4 +653,37 @@ transition-property: background-color;
 
  .gal-link:hover .overlay-text {
   transform: translateY(0%);
+}
+
+/*  Модальное окно ЗАКАЗАТЬ УСЛУГУ*/
+.modal {
+    position: absolute;
+    width: 500px;
+    min-height: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: transform 500ms linear;
+}
+
+.modal-btn {
+    border: 1px solid #999999;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
