@@ -112,7 +112,7 @@ img {
   position: absolute;
   height: 4px;
   border-radius: 2px;
-  bottom: -32px;
+  bottom: -1px;
   display: block;
   background-color: var(--accent-color);
 
@@ -120,8 +120,8 @@ img {
 
 
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .menu-link:hover,
+.site-nav .menu-link:focus {
   color: var(--accent-color);
 }
 
@@ -131,8 +131,6 @@ img {
   display: flex;
   margin-left: auto;
   align-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .contact-link .item {
