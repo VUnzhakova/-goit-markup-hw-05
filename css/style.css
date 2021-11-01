@@ -160,14 +160,22 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   display: flex;
-  align-content: center;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition-property: color, fill;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
+
+.contact-link .contact-icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
 .contact-link .contact:hover,
 .contact-link .contact:focus {
   color: var(--accent-color);
@@ -392,10 +400,17 @@ justify-content: center
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: background-color, fill;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social-icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
@@ -425,10 +440,15 @@ justify-content: center
   border-radius: 4px;
   width: 100%;
   height: 100%;
-  transition-property: border, fill;
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.client-icon {transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
 .client-item:last-child {
   margin-right: 0;
 }
